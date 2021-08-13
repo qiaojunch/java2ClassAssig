@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXsample.Controller">
+   <children>
+      <Label layoutX="79.0" layoutY="58.0" text="Credit Card Number:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="130.0" text="Expiration Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="130.0" prefHeight="19.0" prefWidth="30.0" text="CVV">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="card_tf" layoutX="79.0" layoutY="88.0" onKeyReleased="#handleCreditCard" prefHeight="27.0" prefWidth="260.0" />
+      <TextField layoutX="79.0" layoutY="157.0" prefHeight="27.0" prefWidth="111.0" promptText="MM/YYYY" />
+      <TextField layoutX="227.0" layoutY="157.0" prefHeight="27.0" prefWidth="111.0" promptText="XXX" />
+      <ImageView fitHeight="27.0" fitWidth="37.0" layoutX="31.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/creditCardIcon1.png" />
+         </image></ImageView>
+      <Label fx:id="error_label" layoutX="351.0" layoutY="88.0" prefHeight="27.0" prefWidth="23.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="208.0" text="Credit Card Type:" />
+      <Label fx:id="cardType_label" layoutX="188.0" layoutY="208.0" prefHeight="17.0" prefWidth="111.0" />
+   </children>
+   <opaqueInsets>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>
